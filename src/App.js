@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import AppBarNav from './components/reusable/app_bar_nav.MUI';
+import styled from 'styled-components';
+
+import HomeScreen from './screens/home_screen';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <AppBarNav />
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <AppWrapper>
+        <HomeScreen />
+      </AppWrapper>
     );
   }
 }
 
 export default App;
+
+const AppWrapper = styled.div`
+  width: 100vw;
+  margin: 0;
+`;

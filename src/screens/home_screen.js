@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import AppBarNav from '../components/reusable/app_bar_nav.MUI';
+import Hero from '../components/home-screen/hero';
 
 class HomeScreen extends Component {
   render() {
