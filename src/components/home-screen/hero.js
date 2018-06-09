@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import HeroFooterImg from '../../assets/HeroFooterImg.svg';
-
 class Hero extends Component {
   state = {};
   render() {
@@ -33,8 +31,15 @@ const HeroBG = styled.div`
 `;
 
 const HeroFooter = styled.div`
-  height: 12rem;
-  width: 100%;
-  background-image: url(${HeroFooterImg});
-  background-size: cover;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 100vw solid transparent;
+
+  border-top: 200px solid #058ed9;
+  transform: translateX(-200px);
+
+  @media (max-width: 768px) {
+    border-top: 120px solid #058ed9;
+  }
 `;
