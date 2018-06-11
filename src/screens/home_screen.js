@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 import AppBarNav from '../components/reusable/app_bar_nav.MUI';
 import Hero from '../components/home-screen/hero';
-import AboutSection from '../components/home-screen/about_section';
+import AnnouncementsSection from '../components/home-screen/announcements_section';
 import SlideshowSection from '../components/home-screen/slideshow_section';
+import AboutSection from '../components/home-screen/about_section';
 
 class HomeScreen extends Component {
   render() {
@@ -12,8 +13,9 @@ class HomeScreen extends Component {
       <HomeScreenWrapper>
         <AppBarNav />
         <Hero />
-        <AboutSection />
+        <AnnouncementsSection />
         <SlideshowSection />
+        <AboutSection />
       </HomeScreenWrapper>
     );
   }
