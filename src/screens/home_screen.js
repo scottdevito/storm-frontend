@@ -6,6 +6,7 @@ import Hero from '../components/home-screen/hero';
 import AnnouncementsSection from '../components/home-screen/announcements_section';
 import SlideshowSection from '../components/home-screen/slideshow_section';
 import AboutSection from '../components/home-screen/about_section';
+import Footer from '../components/reusable/footer';
 
 class HomeScreen extends Component {
   render() {
@@ -16,6 +17,7 @@ class HomeScreen extends Component {
         <AnnouncementsSection />
         <SlideshowSection />
         <AboutSection />
+        <Footer />
       </HomeScreenWrapper>
     );
   }

@@ -19,8 +19,8 @@ const AboutSectionWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 18rem;
-  margin-bottom: 18rem;
+  margin-top: 17rem;
+  margin-bottom: 17rem;
   text-align: center;
   width: 100%;
 `;
