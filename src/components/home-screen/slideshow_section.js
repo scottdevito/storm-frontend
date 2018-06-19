@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import SlideshowMock from '../../assets/home-screen/SlideshowMock.svg';
+
 const SlideshowSection = () => {
   return (
     <SlideshowSectionWrapper>
-      <SlideshowBG> </SlideshowBG>
+      <SlideshowBG>
+        <img src={SlideshowMock} alt="Slideshow" />
+      </SlideshowBG>
       <SlideshowSectionFooter />
     </SlideshowSectionWrapper>
   );
@@ -16,6 +20,10 @@ const SlideshowSectionWrapper = styled.div`
 `;
 
 const SlideshowBG = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     113.33deg,
     #c4c4c4 0%,
