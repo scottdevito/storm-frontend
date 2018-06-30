@@ -35,15 +35,21 @@ function AppBarNav(props) {
       <AppBar className={classes.bar} position="static">
         <Toolbar>
           <div variant="title" color="inherit" className={classes.flex} />
-          <Button color="inherit" className={classes.navButton}>
-            <StyledNavLink to="/">Home</StyledNavLink>
-          </Button>
-          <Button color="inherit" className={classes.navButton}>
-            <StyledNavLink to="/staff">Coaching Staff</StyledNavLink>
-          </Button>
-          <Button color="inherit" className={classes.navButton}>
-            <StyledNavLink to="/clinics">Clinics</StyledNavLink>
-          </Button>
+          <StyledNavLink to="/">
+            <Button color="inherit" className={classes.navButton}>
+              Home
+            </Button>
+          </StyledNavLink>
+          <StyledNavLink to="/staff">
+            <Button color="inherit" className={classes.navButton}>
+              Coaching Staff
+            </Button>
+          </StyledNavLink>
+          <StyledNavLink to="/clinics">
+            <Button color="inherit" className={classes.navButton}>
+              Clinics
+            </Button>
+          </StyledNavLink>
           631-494-5040
         </Toolbar>
       </AppBar>
