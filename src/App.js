@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import HomeScreen from './screens/home_screen';
+import StaffScreen from './screens/staff_screen';
 
 class App extends Component {
   render() {
     return (
-      <AppWrapper>
-        <HomeScreen />
-      </AppWrapper>
+      <Router>
+        <AppWrapper>
+          <Route exact path="/" component={HomeScreen} />
+          <Route path="/staff" component={StaffScreen} />
+        </AppWrapper>
+      </Router>
     );
   }
 }

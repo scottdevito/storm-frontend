@@ -4,6 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
 const styles = {
   root: {
@@ -34,13 +36,13 @@ function AppBarNav(props) {
         <Toolbar>
           <div variant="title" color="inherit" className={classes.flex} />
           <Button color="inherit" className={classes.navButton}>
-            Home
+            <StyledNavLink to="/">Home</StyledNavLink>
           </Button>
           <Button color="inherit" className={classes.navButton}>
-            Coaching Staff
+            <StyledNavLink to="/staff">Coaching Staff</StyledNavLink>
           </Button>
           <Button color="inherit" className={classes.navButton}>
-            Clinics
+            <StyledNavLink to="/clinics">Clinics</StyledNavLink>
           </Button>
           631-494-5040
         </Toolbar>
@@ -54,3 +56,8 @@ AppBarNav.propTypes = {
 };
 
 export default withStyles(styles)(AppBarNav);
+
+const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: #fff;
+`;
