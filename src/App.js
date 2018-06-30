@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import HomeScreen from './screens/home_screen';
 import StaffScreen from './screens/staff_screen';
+import ClinicsScreen from './screens/clinics_screen';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <AppWrapper>
           <Route exact path="/" component={HomeScreen} />
           <Route path="/staff" component={StaffScreen} />
+          <Route path="/clinics" component={ClinicsScreen} />
         </AppWrapper>
       </Router>
     );
