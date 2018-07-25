@@ -1,8 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import Clinic from './clinic';
+
+// TODO: Map over available clinics from the database and display them dynamically
 
 const ClinicsSection = () => {
-  return <ClinicsSectionWrapper>Clinics Section</ClinicsSectionWrapper>;
+  return (
+    <ClinicsSectionWrapper>
+      <Clinic
+        clinicSeason="Winter"
+        clinicRegDate="September 30th"
+        clinicDescription="Other text paragraph other text text other different text. Other text paragraph other text text other different text. Other text paragraph other text text other different text. "
+      />
+    </ClinicsSectionWrapper>
+  );
 };
 
 export default ClinicsSection;
@@ -13,6 +24,6 @@ const ClinicsSectionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 `;
